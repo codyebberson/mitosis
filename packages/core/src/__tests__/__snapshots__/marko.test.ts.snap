@@ -1785,6 +1785,12 @@ exports[`Marko > jsx > Javascript Test > preserveTyping 1`] = `
 <div>Hello! I can run in React, Vue, Solid, or Liquid! \${input.name}</div>"
 `;
 
+exports[`Marko > jsx > Javascript Test > propsAll 1`] = `
+"class {}
+
+<div>\${JSON.stringify(input)}</div>"
+`;
+
 exports[`Marko > jsx > Javascript Test > propsDestructure 1`] = `
 "class {
   onCreate(input) {
@@ -4025,6 +4031,12 @@ exports[`Marko > jsx > Typescript Test > preserveTyping 1`] = `
 "class {}
 
 <div>Hello! I can run in React, Vue, Solid, or Liquid! \${input.name}</div>"
+`;
+
+exports[`Marko > jsx > Typescript Test > propsAll 1`] = `
+"class {}
+
+<div>\${JSON.stringify(input)}</div>"
 `;
 
 exports[`Marko > jsx > Typescript Test > propsDestructure 1`] = `

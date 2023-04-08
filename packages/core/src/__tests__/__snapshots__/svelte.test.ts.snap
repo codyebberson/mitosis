@@ -1961,6 +1961,8 @@ exports[`Svelte > jsx > Javascript Test > preserveTyping 1`] = `
 <div>Hello! I can run in React, Vue, Solid, or Liquid! {name}</div>"
 `;
 
+exports[`Svelte > jsx > Javascript Test > propsAll 1`] = `"<div>{JSON.stringify($$props)}</div>"`;
+
 exports[`Svelte > jsx > Javascript Test > propsDestructure 1`] = `
 "<script>
   export let type;
@@ -4934,6 +4936,13 @@ exports[`Svelte > jsx > Typescript Test > preserveTyping 1`] = `
 </script>
 
 <div>Hello! I can run in React, Vue, Solid, or Liquid! {name}</div>"
+`;
+
+exports[`Svelte > jsx > Typescript Test > propsAll 1`] = `
+"<script lang=\\"ts\\">
+</script>
+
+<div>{JSON.stringify($$props)}</div>"
 `;
 
 exports[`Svelte > jsx > Typescript Test > propsDestructure 1`] = `

@@ -2369,6 +2369,20 @@ export default class MyBasicComponent {
 "
 `;
 
+exports[`Stencil > jsx > Javascript Test > propsAll 1`] = `
+"import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
+
+@Component({
+  tag: \\"my-basic-component\\",
+})
+export default class MyBasicComponent {
+  render() {
+    return <div>{JSON.stringify(this)}</div>;
+  }
+}
+"
+`;
+
 exports[`Stencil > jsx > Javascript Test > propsDestructure 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
@@ -5229,6 +5243,20 @@ export default class MyBasicComponent {
         {this.name}
       </div>
     );
+  }
+}
+"
+`;
+
+exports[`Stencil > jsx > Typescript Test > propsAll 1`] = `
+"import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
+
+@Component({
+  tag: \\"my-basic-component\\",
+})
+export default class MyBasicComponent {
+  render() {
+    return <div>{JSON.stringify(this)}</div>;
   }
 }
 "

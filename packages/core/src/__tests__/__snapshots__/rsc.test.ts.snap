@@ -2100,6 +2100,19 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`RSC > jsx > Javascript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+
+function MyBasicComponent(props) {
+  const _context = { ...props[\\"_context\\"] };
+
+  return <div>{JSON.stringify(props)}</div>;
+}
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`RSC > jsx > Javascript Test > propsDestructure 1`] = `
 "import * as React from \\"react\\";
 
@@ -5278,6 +5291,19 @@ function MyBasicComponent(props: MyBasicComponentProps) {
       {props.name}
     </div>
   );
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`RSC > jsx > Typescript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+
+function MyBasicComponent(props: any) {
+  const _context = { ...props[\\"_context\\"] };
+
+  return <div>{JSON.stringify(props)}</div>;
 }
 
 export default MyBasicComponent;

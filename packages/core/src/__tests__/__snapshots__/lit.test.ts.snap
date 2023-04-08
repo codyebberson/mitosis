@@ -2953,6 +2953,27 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
+exports[`Lit > jsx > Javascript Test > propsAll 1`] = `
+"import { LitElement, html, css } from \\"lit\\";
+import { customElement, property, state, query } from \\"lit/decorators.js\\";
+
+@customElement(\\"my-basic-component\\")
+export default class MyBasicComponent extends LitElement {
+  createRenderRoot() {
+    return this;
+  }
+
+  render() {
+    return html\`
+      
+      <div>\${JSON.stringify(this)}</div>
+
+    \`;
+  }
+}
+"
+`;
+
 exports[`Lit > jsx > Javascript Test > propsDestructure 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
@@ -7173,6 +7194,27 @@ export default class MyBasicComponent extends LitElement {
         <div>Hello! I can run in React, Vue, Solid, or Liquid! \${this.name}</div>
 
       \`;
+  }
+}
+"
+`;
+
+exports[`Lit > jsx > Typescript Test > propsAll 1`] = `
+"import { LitElement, html, css } from \\"lit\\";
+import { customElement, property, state, query } from \\"lit/decorators.js\\";
+
+@customElement(\\"my-basic-component\\")
+export default class MyBasicComponent extends LitElement {
+  createRenderRoot() {
+    return this;
+  }
+
+  render() {
+    return html\`
+      
+      <div>\${JSON.stringify(this)}</div>
+
+    \`;
   }
 }
 "

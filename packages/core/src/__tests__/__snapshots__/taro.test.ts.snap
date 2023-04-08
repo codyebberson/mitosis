@@ -2325,6 +2325,18 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`Taro > jsx > Javascript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+import { View, Text } from \\"@tarojs/components\\";
+
+function MyBasicComponent(props) {
+  return <View>{JSON.stringify(props)}</View>;
+}
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`Taro > jsx > Javascript Test > propsDestructure 1`] = `
 "import * as React from \\"react\\";
 import { useState } from \\"react\\";
@@ -5749,6 +5761,18 @@ function MyBasicComponent(props: MyBasicComponentProps) {
       {props.name}
     </View>
   );
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`Taro > jsx > Typescript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+import { View, Text } from \\"@tarojs/components\\";
+
+function MyBasicComponent(props: any) {
+  return <View>{JSON.stringify(props)}</View>;
 }
 
 export default MyBasicComponent;

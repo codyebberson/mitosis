@@ -2360,6 +2360,18 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`Preact > jsx > Javascript Test > propsAll 1`] = `
+"/** @jsx h */
+import { h, Fragment } from \\"preact\\";
+
+function MyBasicComponent(props) {
+  return <div>{JSON.stringify(props)}</div>;
+}
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`Preact > jsx > Javascript Test > propsDestructure 1`] = `
 "/** @jsx h */
 import { h, Fragment } from \\"preact\\";
@@ -5794,6 +5806,18 @@ function MyBasicComponent(props: MyBasicComponentProps) {
       {props.name}
     </div>
   );
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`Preact > jsx > Typescript Test > propsAll 1`] = `
+"/** @jsx h */
+import { h, Fragment } from \\"preact\\";
+
+function MyBasicComponent(props: any) {
+  return <div>{JSON.stringify(props)}</div>;
 }
 
 export default MyBasicComponent;

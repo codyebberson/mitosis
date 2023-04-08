@@ -2728,6 +2728,29 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`React Native > jsx > Javascript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+import {
+  FlatList,
+  ScrollView,
+  View,
+  StyleSheet,
+  Image,
+  Text,
+} from \\"react-native\\";
+
+function MyBasicComponent(props) {
+  return (
+    <View>
+      <Text>{JSON.stringify(props)}</Text>
+    </View>
+  );
+}
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`React Native > jsx > Javascript Test > propsDestructure 1`] = `
 "import * as React from \\"react\\";
 import {
@@ -6670,6 +6693,29 @@ function MyBasicComponent(props: MyBasicComponentProps) {
     <View>
       <Text>Hello! I can run in React, Vue, Solid, or Liquid! </Text>
       <Text>{props.name}</Text>
+    </View>
+  );
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`React Native > jsx > Typescript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+import {
+  FlatList,
+  ScrollView,
+  View,
+  StyleSheet,
+  Image,
+  Text,
+} from \\"react-native\\";
+
+function MyBasicComponent(props: any) {
+  return (
+    <View>
+      <Text>{JSON.stringify(props)}</Text>
     </View>
   );
 }

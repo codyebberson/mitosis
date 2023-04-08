@@ -3842,6 +3842,17 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`qwik > jsx > Javascript Test > propsAll 1`] = `
+"import { Fragment, component$, h } from \\"@builder.io/qwik\\";
+
+export const MyBasicComponent = component$((props) => {
+  return <div>{JSON.stringify(props)}</div>;
+});
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`qwik > jsx > Javascript Test > propsDestructure 1`] = `
 "import { Fragment, Slot, component$, h, useStore } from \\"@builder.io/qwik\\";
 
@@ -7085,6 +7096,17 @@ export const MyBasicComponent = component$((props: MyBasicComponentProps) => {
   return (
     <div>Hello! I can run in React, Vue, Solid, or Liquid! {props.name}</div>
   );
+});
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`qwik > jsx > Typescript Test > propsAll 1`] = `
+"import { Fragment, component$, h } from \\"@builder.io/qwik\\";
+
+export const MyBasicComponent = component$((props: any) => {
+  return <div>{JSON.stringify(props)}</div>;
 });
 
 export default MyBasicComponent;

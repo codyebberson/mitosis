@@ -8771,6 +8771,51 @@ exports[`Parse JSX > Javascript > preserveTyping 1`] = `
 }
 `;
 
+exports[`Parse JSX > Javascript > propsAll 1`] = `
+{
+  "@type": "@builder.io/mitosis/component",
+  "children": [
+    {
+      "@type": "@builder.io/mitosis/node",
+      "bindings": {},
+      "children": [
+        {
+          "@type": "@builder.io/mitosis/node",
+          "bindings": {
+            "_text": {
+              "code": "JSON.stringify(props)",
+              "type": "single",
+            },
+          },
+          "children": [],
+          "meta": {},
+          "name": "div",
+          "properties": {},
+          "scope": {},
+        },
+      ],
+      "meta": {},
+      "name": "div",
+      "properties": {},
+      "scope": {},
+    },
+  ],
+  "context": {
+    "get": {},
+    "set": {},
+  },
+  "exports": {},
+  "hooks": {},
+  "imports": [],
+  "inputs": [],
+  "meta": {},
+  "name": "MyBasicComponent",
+  "refs": {},
+  "state": {},
+  "subComponents": [],
+}
+`;
+
 exports[`Parse JSX > Javascript > propsDestructure 1`] = `
 {
   "@type": "@builder.io/mitosis/component",
@@ -20641,6 +20686,51 @@ exports[`Parse JSX > Typescript > preserveTyping 1`] = `
   age?: number
 }",
   ],
+}
+`;
+
+exports[`Parse JSX > Typescript > propsAll 1`] = `
+{
+  "@type": "@builder.io/mitosis/component",
+  "children": [
+    {
+      "@type": "@builder.io/mitosis/node",
+      "bindings": {},
+      "children": [
+        {
+          "@type": "@builder.io/mitosis/node",
+          "bindings": {
+            "_text": {
+              "code": "JSON.stringify(props)",
+              "type": "single",
+            },
+          },
+          "children": [],
+          "meta": {},
+          "name": "div",
+          "properties": {},
+          "scope": {},
+        },
+      ],
+      "meta": {},
+      "name": "div",
+      "properties": {},
+      "scope": {},
+    },
+  ],
+  "context": {
+    "get": {},
+    "set": {},
+  },
+  "exports": {},
+  "hooks": {},
+  "imports": [],
+  "inputs": [],
+  "meta": {},
+  "name": "MyBasicComponent",
+  "refs": {},
+  "state": {},
+  "subComponents": [],
 }
 `;
 

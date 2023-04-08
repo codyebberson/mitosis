@@ -2293,6 +2293,17 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`React > jsx > Javascript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+
+function MyBasicComponent(props) {
+  return <div>{JSON.stringify(props)}</div>;
+}
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`React > jsx > Javascript Test > propsDestructure 1`] = `
 "import * as React from \\"react\\";
 import { useState } from \\"react\\";
@@ -5638,6 +5649,17 @@ function MyBasicComponent(props: MyBasicComponentProps) {
       {props.name}
     </div>
   );
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`React > jsx > Typescript Test > propsAll 1`] = `
+"import * as React from \\"react\\";
+
+function MyBasicComponent(props: any) {
+  return <div>{JSON.stringify(props)}</div>;
 }
 
 export default MyBasicComponent;

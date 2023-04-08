@@ -3155,6 +3155,30 @@ export class MyBasicComponentModule {}
 "
 `;
 
+exports[`Angular with Import Mapper Tests > jsx > Javascript Test > propsAll 1`] = `
+"import { NgModule } from \\"@angular/core\\";
+import { CommonModule } from \\"@angular/common\\";
+
+import { Component } from \\"@angular/core\\";
+
+@Component({
+  selector: \\"my-basic-component, MyBasicComponent\\",
+  template: \`
+    <div>{{JSON.stringify(props)}}</div>
+  \`,
+})
+export class MyBasicComponent {}
+
+@NgModule({
+  declarations: [MyBasicComponent],
+  imports: [CommonModule],
+  exports: [MyBasicComponent],
+  bootstrap: [SomeOtherComponent],
+})
+export class MyBasicComponentModule {}
+"
+`;
+
 exports[`Angular with Import Mapper Tests > jsx > Javascript Test > propsDestructure 1`] = `
 "import { NgModule } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
@@ -7589,6 +7613,30 @@ export interface MyBasicComponentProps {
 export class MyBasicComponent {
   @Input() name: MyBasicComponentProps[\\"name\\"];
 }
+
+@NgModule({
+  declarations: [MyBasicComponent],
+  imports: [CommonModule],
+  exports: [MyBasicComponent],
+  bootstrap: [SomeOtherComponent],
+})
+export class MyBasicComponentModule {}
+"
+`;
+
+exports[`Angular with Import Mapper Tests > jsx > Typescript Test > propsAll 1`] = `
+"import { NgModule } from \\"@angular/core\\";
+import { CommonModule } from \\"@angular/common\\";
+
+import { Component } from \\"@angular/core\\";
+
+@Component({
+  selector: \\"my-basic-component, MyBasicComponent\\",
+  template: \`
+    <div>{{JSON.stringify(props)}}</div>
+  \`,
+})
+export class MyBasicComponent {}
 
 @NgModule({
   declarations: [MyBasicComponent],

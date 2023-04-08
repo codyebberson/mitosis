@@ -2180,6 +2180,12 @@ const props = defineProps([\\"name\\"]);
 </script>"
 `;
 
+exports[`Vue > jsx > Javascript Test > propsAll 1`] = `
+"<template>
+  <div>{{ JSON.stringify(props) }}</div>
+</template>"
+`;
+
 exports[`Vue > jsx > Javascript Test > propsDestructure 1`] = `
 "<template>
   <div>
@@ -5223,6 +5229,12 @@ export interface MyBasicComponentProps {
 
 const props = defineProps<MyBasicComponentProps>();
 </script>"
+`;
+
+exports[`Vue > jsx > Typescript Test > propsAll 1`] = `
+"<template>
+  <div>{{ JSON.stringify(props) }}</div>
+</template>"
 `;
 
 exports[`Vue > jsx > Typescript Test > propsDestructure 1`] = `

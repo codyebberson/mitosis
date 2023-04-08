@@ -4625,6 +4625,30 @@ export default MyBasicComponent;
 "
 `;
 
+exports[`Solid > jsx > Javascript Test > propsAll 1`] = `
+"function MyBasicComponent(props) {
+  return <div>{JSON.stringify(props)}</div>;
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`Solid > jsx > Javascript Test > propsAll 2`] = `
+"import { css } from \\"solid-styled-components\\";
+
+function MyBasicComponent(props) {
+  return (
+    <>
+      <div>{JSON.stringify(props)}</div>
+    </>
+  );
+}
+
+export default MyBasicComponent;
+"
+`;
+
 exports[`Solid > jsx > Javascript Test > propsDestructure 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
@@ -11285,6 +11309,30 @@ function MyBasicComponent(props: MyBasicComponentProps) {
         Hello! I can run in React, Vue, Solid, or Liquid!
         {props.name}
       </div>
+    </>
+  );
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`Solid > jsx > Typescript Test > propsAll 1`] = `
+"function MyBasicComponent(props: any) {
+  return <div>{JSON.stringify(props)}</div>;
+}
+
+export default MyBasicComponent;
+"
+`;
+
+exports[`Solid > jsx > Typescript Test > propsAll 2`] = `
+"import { css } from \\"solid-styled-components\\";
+
+function MyBasicComponent(props: any) {
+  return (
+    <>
+      <div>{JSON.stringify(props)}</div>
     </>
   );
 }

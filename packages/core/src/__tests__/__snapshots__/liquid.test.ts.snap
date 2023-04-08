@@ -655,6 +655,11 @@ exports[`Liquid > jsx > Javascript Test > preserveTyping 1`] = `
 "
 `;
 
+exports[`Liquid > jsx > Javascript Test > propsAll 1`] = `
+"<div></div>
+"
+`;
+
 exports[`Liquid > jsx > Javascript Test > propsDestructure 1`] = `
 "<div>
   {{children}} {{type}} Hello! I can run in React, Vue, Solid, or Liquid!
@@ -1483,6 +1488,11 @@ exports[`Liquid > jsx > Typescript Test > preserveExportOrLocalStatement 1`] = `
 
 exports[`Liquid > jsx > Typescript Test > preserveTyping 1`] = `
 "<div>Hello! I can run in React, Vue, Solid, or Liquid! {{name}}</div>
+"
+`;
+
+exports[`Liquid > jsx > Typescript Test > propsAll 1`] = `
+"<div></div>
 "
 `;
 

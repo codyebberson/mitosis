@@ -4342,6 +4342,62 @@ exports[`Html > jsx > Javascript Test > preserveTyping 1`] = `
 "
 `;
 
+exports[`Html > jsx > Javascript Test > propsAll 1`] = `
+"<div>
+  <template data-el=\\"div-1\\"><!-- JSON.stringify(props) --></template>
+</div>
+<script>
+  (() => {
+    const state = {};
+
+    let context = null;
+    let nodesToDestroy = [];
+    let pendingUpdate = false;
+
+    function destroyAnyNodes() {
+      // destroy current view template refs before rendering again
+      nodesToDestroy.forEach((el) => el.remove());
+      nodesToDestroy = [];
+    }
+
+    // Function to update data bindings and loops
+    // call update() when you mutate state and need the updates to reflect
+    // in the dom
+    function update() {
+      if (pendingUpdate === true) {
+        return;
+      }
+      pendingUpdate = true;
+
+      document.querySelectorAll(\\"[data-el='div-1']\\").forEach((el) => {
+        renderTextNode(el, JSON.stringify(props));
+      });
+
+      destroyAnyNodes();
+
+      pendingUpdate = false;
+    }
+
+    // Update with initial state on first load
+    update();
+
+    // Helper text DOM nodes
+    function renderTextNode(el, text) {
+      const textNode = document.createTextNode(text);
+      if (el?.scope) {
+        textNode.scope = el.scope;
+      }
+      if (el?.context) {
+        child.context = el.context;
+      }
+      el.after(textNode);
+      nodesToDestroy.push(el.nextSibling);
+    }
+  })();
+</script>
+"
+`;
+
 exports[`Html > jsx > Javascript Test > propsDestructure 1`] = `
 "<div>
   <slot></slot>
@@ -10091,6 +10147,62 @@ exports[`Html > jsx > Typescript Test > preserveTyping 1`] = `
 
       document.querySelectorAll(\\"[data-el='div-1']\\").forEach((el) => {
         renderTextNode(el, props.name);
+      });
+
+      destroyAnyNodes();
+
+      pendingUpdate = false;
+    }
+
+    // Update with initial state on first load
+    update();
+
+    // Helper text DOM nodes
+    function renderTextNode(el, text) {
+      const textNode = document.createTextNode(text);
+      if (el?.scope) {
+        textNode.scope = el.scope;
+      }
+      if (el?.context) {
+        child.context = el.context;
+      }
+      el.after(textNode);
+      nodesToDestroy.push(el.nextSibling);
+    }
+  })();
+</script>
+"
+`;
+
+exports[`Html > jsx > Typescript Test > propsAll 1`] = `
+"<div>
+  <template data-el=\\"div-1\\"><!-- JSON.stringify(props) --></template>
+</div>
+<script>
+  (() => {
+    const state = {};
+
+    let context = null;
+    let nodesToDestroy = [];
+    let pendingUpdate = false;
+
+    function destroyAnyNodes() {
+      // destroy current view template refs before rendering again
+      nodesToDestroy.forEach((el) => el.remove());
+      nodesToDestroy = [];
+    }
+
+    // Function to update data bindings and loops
+    // call update() when you mutate state and need the updates to reflect
+    // in the dom
+    function update() {
+      if (pendingUpdate === true) {
+        return;
+      }
+      pendingUpdate = true;
+
+      document.querySelectorAll(\\"[data-el='div-1']\\").forEach((el) => {
+        renderTextNode(el, JSON.stringify(props));
       });
 
       destroyAnyNodes();

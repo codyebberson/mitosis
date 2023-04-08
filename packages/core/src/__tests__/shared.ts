@@ -32,6 +32,7 @@ const basicForwardRef = getRawFile('./data/basic-forwardRef.raw.tsx');
 const basicForwardRefMetadata = getRawFile('./data/basic-forwardRef-metadata.raw.tsx');
 const basicRefPrevious = getRawFile('./data/basic-ref-usePrevious.raw.tsx');
 const basicRefAssignment = getRawFile('./data/basic-ref-assignment.raw.tsx');
+const propsAll = getRawFile('./data/basic-props-all.raw.tsx');
 const propsDestructure = getRawFile('./data/basic-props-destructure.raw.tsx');
 const nestedStyles = getRawFile('./data/nested-styles.raw.tsx');
 const preserveExportOrLocalStatement = getRawFile(
@@ -169,6 +170,7 @@ const BASIC_TESTS: Tests = {
   'import types': builderRenderContent,
   subComponent,
   nestedStyles,
+  propsAll: propsAll,
   propsDestructure: propsDestructure,
   'onInit & onMount': onInitonMount,
   'Basic Context': basicContext,

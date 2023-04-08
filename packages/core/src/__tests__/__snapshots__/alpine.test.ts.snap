@@ -1930,6 +1930,18 @@ exports[`Alpine.js > jsx > Javascript Test > preserveTyping 1`] = `
 "
 `;
 
+exports[`Alpine.js > jsx > Javascript Test > propsAll 1`] = `
+"<div x-data=\\"myBasicComponent()\\">
+  <span x-html=\\"JSON.stringify(props)\\"></span>
+</div>
+<script>
+  document.addEventListener(\\"alpine:init\\", () => {
+    Alpine.data(\\"myBasicComponent\\", () => ({}));
+  });
+</script>
+"
+`;
+
 exports[`Alpine.js > jsx > Javascript Test > propsDestructure 1`] = `
 "<div x-data=\\"myBasicComponent()\\">
   <span x-html=\\"children\\"></span>
@@ -4421,6 +4433,18 @@ exports[`Alpine.js > jsx > Typescript Test > preserveTyping 1`] = `
 "<div x-data=\\"myBasicComponent()\\">
   Hello! I can run in React, Vue, Solid, or Liquid!
   <span x-html=\\"name\\"></span>
+</div>
+<script>
+  document.addEventListener(\\"alpine:init\\", () => {
+    Alpine.data(\\"myBasicComponent\\", () => ({}));
+  });
+</script>
+"
+`;
+
+exports[`Alpine.js > jsx > Typescript Test > propsAll 1`] = `
+"<div x-data=\\"myBasicComponent()\\">
+  <span x-html=\\"JSON.stringify(props)\\"></span>
 </div>
 <script>
   document.addEventListener(\\"alpine:init\\", () => {
